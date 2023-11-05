@@ -3,9 +3,7 @@
         "name": "Emscripten",
         "toolchainFile": "${env:EMSDK_DIR}/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake",
         "cmakeSettings": {
-            "cmake.configureArgs": [
-                "-DPLATFORM=Web"
-            ]
+            "PLATFORM": "Web"
         }
     }
 ]
