@@ -1,3 +1,23 @@
+## What is this?
+
+This is a modified version of the raylib game template aiming for an easy setup for Web targeted games via emscripten.
+
+It aims to fully automate the creation of the development environment with the use of dev-containers with Visual Studio Code.
+
+### How to use?
+
+- Clone this repo and open it inside VS Code.
+- Install the dev containers extension in VS Code and re-open the repository in a container. (You must have docker engine installed to do this. The VS Code extension can install it but I never tried that feature.)
+- The extension should read the configurations I left to create a container with all the requirements for compiling and running this project. You will need internet access for this.
+- Once the container is created, you will be asked to choose a kit. Choose Emscripten. Which should get you ready for Web compilation.
+- You can compile the project using the `build` button that should appear at the bottom of VS Code. If you are getting errors, try deleting the build folder.
+- Once compilation is done. You can run the game using the custom task I created by:
+    - `Ctrl+Shift+P`
+    - enter `Run Task`
+    - You should see a task named `python http server` use that.
+    - It should compile project and launch a http server. Click on the link you see on the terminal.
+    - Which will open a port from the dev container to display the game on your browser
+
 -----------------------------------
 
 _DISCLAIMER:_
